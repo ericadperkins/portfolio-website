@@ -1,0 +1,41 @@
+.banner {
+  background-image: url("https://i.ibb.co/xD9LXFr/black.jpg");
+  background-position: center;
+  background-size: cover;
+  color: whiteSmoke;
+  height: 450px;
+  object-fit: contain;
+}
+.overlay {
+  background-color: #111111d0;
+  height: 450px;
+  width: 100%;
+}
+
+.bannerSubtext {
+  color: whiteSmoke;
+  font-size: 1.7rem;
+  font-weight: 100;
+  padding-top: 170px;
+  text-align: center;
+}
+
+.bannerSubtext:hover {
+  cursor: default;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner,
+  .overlay {
+    height: 333px;
+  }
+  .bannerSubtext {
+    font-size: 1.4rem;
+    padding-top: 100px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .smblock {
+    display: block;
+  }
+}

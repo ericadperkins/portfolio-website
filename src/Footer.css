@@ -1,0 +1,26 @@
+a {
+  display: inline-block;
+  margin-top: 0.7rem;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  .smFooter {
+    background-color: #111;
+    bottom: 0;
+    display: flex;
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-around;
+  }
+  .smFooter > a {
+    width: 24%;
+  }
+  .icons {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}

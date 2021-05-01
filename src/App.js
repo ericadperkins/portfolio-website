@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Navbar from './Navbar.js';
+import Banner from './Banner.js';
+import About  from './About.js';
+import Portfolio from './Portfolio.js';
+import Footer from './Footer.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  let sz = window.screen.width;
+  if(sz > 769){
+    return (
+      <div className="wrapper">
+        <Navbar />
+        <Banner />
+        <About  />
+        <Portfolio />
+      </div>
+    );
+  }else{
+    return (
+      <div className="wrapper">
+        <Navbar />
+        <Banner />
+        <About  />
+        <Portfolio />
+        <Footer />
+      </div>
+    );
+  }
+  
 }
 
 export default App;

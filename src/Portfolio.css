@@ -1,0 +1,80 @@
+.portfolio {
+  display: flex;
+  margin-top: 25vh;
+  margin-left: -2%;
+  padding: 0vh 8vw;
+  padding-bottom: 14vh;
+  justify-content: space-between;
+}
+.portfolioFlex {
+  display: block;
+  justify-content: space-between;
+}
+.portfolioSmHead {
+  display: none;
+}
+.portfolioItem {
+  display: inline-block;
+  margin-left: 2%;
+  object-fit: contain;
+  width: 23%;
+  max-width: 23%;
+}
+.ifolio {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.afolio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -1rem;
+  width: 100%;
+}
+.web {
+  background-color: #c70039;
+  left: 0;
+}
+.git {
+  background-color: dodgerblue;
+  margin-left: 0.5rem;
+  right: 0;
+}
+.git,
+.web {
+  color: white;
+  display: inline;
+  object-fit: contain;
+  padding: 10px;
+  text-decoration: none;
+  width: 50%;
+}
+a:hover {
+  color: black;
+}
+.smFooter {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    margin-top: 14vh;
+    display: flex;
+  }
+  .portfolioSmHead {
+    display: block;
+    padding-left: 8px;
+  }
+  .late {
+    font-weight: 500;
+  }
+  .portfolioItem {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 1%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .afolio {
+    margin-top: -1rem;
+  }
+}
